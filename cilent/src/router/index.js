@@ -10,11 +10,13 @@ import Login from '@/components/Login'
 
 import CommentIndex from '@/components/Comments/Index'
 
+//Blog
 import BlogIndex from '@/components/Blogs/Index'
 import BlogCreate from '@/components/Blogs/CreateBlog'
 import BlogEdit from '@/components/Blogs/EditBlog'
 import BlogShow from '@/components/Blogs/ShowBlog'
 
+//Authen
 Vue.use(Router)
 
 export default new Router({
@@ -48,27 +50,29 @@ export default new Router({
     {
       path: '/blogs',
       name: 'blogs',
-      component: BlogIndex 
+      component: BlogIndex
     },
     {
       path: '/blog/create',
       name: 'blogs-edit',
-      component: BlogCreate 
+      component: BlogCreate
     },
     {
       path: '/blog/edit/:blogId',
       name: 'blog-edit',
-      component: BlogEdit 
+      component: BlogEdit
     },
     {
-      path: '/blog/blogId',
+      path: '/blog/:blogId',
       name: 'blog',
-      component: BlogShow 
+      component: BlogShow
     },
+
+    //comment
     {
       path: '/comments',
       name: 'comments',
-      component: CommentIndex 
-    },
+      component: CommentIndex
+    }
   ]
 })

@@ -7,7 +7,7 @@
             <p>category: <input type="text" v-model="blog.category"></p>
             <p>status: <input type="text" v-model="blog.status"></p>
             <p><button type="submit">create blog</button></p>
-
+            
         </form>
     </div>
 </template>
@@ -39,7 +39,7 @@ export default {
         }
     }
 }
-
+        
 </script>
 <style scoped>
 </style>
