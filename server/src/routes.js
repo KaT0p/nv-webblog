@@ -1,3 +1,4 @@
+const UserAuthenController = require('./controllers/UserAuthenController')
 const UserController = require('./controllers/UserController')
 
 module.exports = (app) => {
@@ -25,5 +26,9 @@ module.exports = (app) => {
   // get all user
   app.get('/users',
     UserController.index    
+  )
+
+  app.post('/login',
+    UserAuthenController.login
   )
 }
