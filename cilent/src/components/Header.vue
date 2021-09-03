@@ -6,7 +6,7 @@
                 <li><router-link :to="{name: 'users'}">Users</router-link></li>
                 <li><router-link :to="{name: 'comments'}">Comments</router-link></li>
                 <li><router-link :to="{name: 'login'}">Login</router-link></li>
-                <li><router-link :to="{name: 'blogs'}">Logout</router-link></li>
+                <li><router-link :to="{name: 'blogs'}">Blogs</router-link></li>
             </ul>
             <div class="clearfix"></div>
         </div>
@@ -17,7 +17,7 @@ export default {};
 </script>
 <style scoped>
     .nv-navbar {
-        background-color: palegoldenrod;
+        background-color: rgb(252, 146, 142);
         width: 100%;
         padding: 10px 0px 10px 0px;
     }
@@ -47,7 +47,7 @@ export default {};
     }
 
     .nv-navbar .nav li a.router-link-active {
-        background-color: gold;
+        background-color: rgb(255, 183, 136);
         color: darkslategray;
     }
 
