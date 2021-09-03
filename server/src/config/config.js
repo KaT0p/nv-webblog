@@ -1,3 +1,4 @@
+
 module.exports = {
   db: {
     database: process.env.DB_NAME || 'nvWebblogDb',
@@ -5,10 +6,12 @@ module.exports = {
     password: process.env.DB_PASS || '',
     options: {
       dialect: process.env.DIALECT || 'sqlite',
-      storage: './nvwebblog-db.sqlite'      
-    },  
+      storage: './nvwebblog-db.sqlite'
+    },
   },
   authentication: {
     jwtSecret: 'nodejs vuejs'
   }
 }
+
+
